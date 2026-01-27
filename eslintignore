@@ -1,0 +1,8 @@
+node_modules/
+.expo/
+dist/
+coverage/
+*.config.js
+.bundle
+ios/
+android/

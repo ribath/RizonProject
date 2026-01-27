@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "149588585860",
+    "project_id": "rizonapp",
+    "storage_bucket": "rizonapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149588585860:android:6718e8e94b4e072afac1d1",
+        "android_client_info": {
+          "package_name": "com.rizonproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl7TI71jR3LvMTXNxgkXw5orxvOhGGjfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
