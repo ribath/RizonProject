@@ -9,7 +9,7 @@ import {
   ViewStyle,
   StyleProp,
 } from 'react-native';
-import { colors } from '../resources/colors';
+import { colors } from '../../resources/colors';
 
 interface RizonButtonSecondaryProps {
   text: string;

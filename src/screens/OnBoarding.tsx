@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Text, StyleSheet, View } from 'react-native';
 import { colors } from '../resources/colors';
-import RizonBottomSheet from '../components/RizonBottomSheet';
+import RizonBottomSheet from '../components/core/RizonBottomSheet';
 import { useLazyGetOnboardingQuery, useSendFeedbackMutation } from '../redux/services/api';
-import AskFeedback from './AskFeedback';
-import SendFeedback from './SendFeedback';
+import AskFeedbackModal from '../components/AskFeedbackModal';
+import SendFeedbackModal from '../components/SendFeedbackModal';
 
 const OnBoarding = () => {
   type SheetType = 'NONE' | 'ONBOARDING_DONE' | 'FEEDBACK';
@@ -54,10 +54,10 @@ const OnBoarding = () => {
       <Text style={styles.title}>On Boarding</Text>
       <RizonBottomSheet showModal={showModal} closeModal={handleCloseSheet} loading={isSending}>
         {activeSheet === 'ONBOARDING_DONE' && (
-          <AskFeedback onClose={handleCloseSheet} onContinue={handleOpenFeedback} />
+          <AskFeedbackModal onClose={handleCloseSheet} onContinue={handleOpenFeedback} />
         )}
         {activeSheet === 'FEEDBACK' && (
-          <SendFeedback onSend={handleSendFeedback} isSending={isSending} />
+          <SendFeedbackModal onSend={handleSendFeedback} isSending={isSending} />
         )}
       </RizonBottomSheet>
     </View>

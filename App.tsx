@@ -5,7 +5,7 @@ import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import messaging from '@react-native-firebase/messaging';
 import Navigation from './src/navigation';
 import { store } from './src/redux/store';
-import LeaveReviewModal from './src/screens/LeaveReviewModal';
+import LeaveReviewModal from './src/components/LeaveReviewModal';
 
 function App() {
   const [showLeaveReview, setShowLeaveReview] = useState(false);

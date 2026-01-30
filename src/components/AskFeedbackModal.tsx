@@ -2,15 +2,15 @@
 import React from 'react';
 import { Text, StyleSheet, View, Platform, Image } from 'react-native';
 import { colors } from '../resources/colors';
-import RizonButtonSecondary from '../components/RizonButtonSecondary';
-import RizonButtonPrimary from '../components/RizonButtonPrimary';
+import RizonButtonSecondary from './core/RizonButtonSecondary';
+import RizonButtonPrimary from './core/RizonButtonPrimary';
 
 interface AskFeedbackProps {
   onClose: () => void;
   onContinue: () => void;
 }
 
-const AskFeedback: React.FC<AskFeedbackProps> = ({ onClose, onContinue }) => {
+const AskFeedbackModal: React.FC<AskFeedbackProps> = ({ onClose, onContinue }) => {
   return (
     <>
       <View style={styles.imageContainer}>
@@ -82,4 +82,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AskFeedback;
+export default AskFeedbackModal;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, StyleSheet, View } from 'react-native';
-import { colors } from '../resources/colors';
 import { useNavigation } from '@react-navigation/native';
+import { colors } from '../resources/colors';
 import { NavigationProp } from '../navigation/RootNavigation';
 
 const Account = () => {

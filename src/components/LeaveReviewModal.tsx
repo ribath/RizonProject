@@ -2,8 +2,8 @@
 import React from 'react';
 import { Image, Linking, Platform, StyleSheet, Text, View } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import RizonBottomSheet from '../components/RizonBottomSheet';
-import RizonButtonPrimary from '../components/RizonButtonPrimary';
+import RizonBottomSheet from './core/RizonBottomSheet';
+import RizonButtonPrimary from './core/RizonButtonPrimary';
 import { colors } from '../resources/colors';
 
 interface Props {

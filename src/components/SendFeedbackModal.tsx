@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { Text, StyleSheet, View, Platform } from 'react-native';
 import { colors } from '../resources/colors';
-import CustomInput from '../components/RizonInput';
-import RizonButtonPrimary from '../components/RizonButtonPrimary';
+import CustomInput from './core/RizonInput';
+import RizonButtonPrimary from './core/RizonButtonPrimary';
 
 interface SendFeedbackProps {
   onSend: (feedback: string) => Promise<void>;
   isSending: boolean;
 }
 
-const SendFeedback: React.FC<SendFeedbackProps> = ({ onSend, isSending }) => {
+const SendFeedbackModal: React.FC<SendFeedbackProps> = ({ onSend, isSending }) => {
   const [feedback, setFeedback] = useState<string>('');
 
   const handleSendFeedback = async () => {
@@ -80,4 +80,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SendFeedback;
+export default SendFeedbackModal;
